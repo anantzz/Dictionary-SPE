@@ -12,7 +12,7 @@ COPY lib/mysql-connector.jar /app/lib/
 
 # Set environment variables for database connectivity
 ENV DB_HOST=mysql
-ENV DB_PORT=3306
+ENV DB_PORT=3307
 ENV DB_NAME=restaurant
 ENV DB_USER=root
 ENV DB_PASSWORD=helloworld

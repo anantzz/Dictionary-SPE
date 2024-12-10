@@ -8,4 +8,4 @@ ENV MYSQL_DATABASE=restaurant
 COPY ./*.sql /docker-entrypoint-initdb.d/
 
 # Expose MySQL port
-EXPOSE 3306
+EXPOSE 3307
