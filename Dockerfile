@@ -5,7 +5,7 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copy compiled Java code or JAR file to the container
-COPY target/restaurant-management.jar /app/
+COPY target/restaurant-management-1.0.0-jar-with-dependencies.jar /app/
 
 # Copy MySQL connector (optional if needed)
 COPY lib/mysql-connector.jar /app/lib/
