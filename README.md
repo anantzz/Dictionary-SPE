@@ -11,4 +11,4 @@ source Restaurant_data.sql;
 
 3. Open the src folder in VS Code and make sure the connector present in the lib folder is connected to the project.
 4. Go to DAO_Factory.java and change the username and password accordingly on line 16, 17.
-5. Go to Interface.java and run it.
+5. Go to Main.java and run it.

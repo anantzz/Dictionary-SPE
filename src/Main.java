@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Interface {
+public class Main {
 	public static DAO_Factory daoFactory;
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
