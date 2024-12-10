@@ -10,7 +10,7 @@ services:
       - DB_PORT=3306
       - DB_NAME=restaurant
       - DB_USER=root
-      - DB_PASSWORD=rootpassword
+      - DB_PASSWORD=helloworld
     ports:
       - "8080:8080"
     depends_on:
@@ -22,7 +22,7 @@ services:
       dockerfile: Dockerfile
     container_name: mysql-db
     environment:
-      - MYSQL_ROOT_PASSWORD=rootpassword
+      - MYSQL_ROOT_PASSWORD=helloworld
       - MYSQL_DATABASE=restaurant
     ports:
       - "3306:3306"

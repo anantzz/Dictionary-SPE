@@ -15,7 +15,7 @@ ENV DB_HOST=mysql
 ENV DB_PORT=3306
 ENV DB_NAME=restaurant
 ENV DB_USER=root
-ENV DB_PASSWORD=rootpassword
+ENV DB_PASSWORD=helloworld
 
 # Command to run the application
 CMD ["java", "-cp", "/app:/app/lib/*", "MainClassName"]

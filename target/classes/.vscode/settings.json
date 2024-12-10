@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/home/anant/Desktop/course/assignment/dbms/proj/proj_tmp/Restaurant Management/lib/mysql-connector.jar"
+    ]
+}

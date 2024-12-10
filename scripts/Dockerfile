@@ -1,7 +1,7 @@
 FROM mysql:8.0
 
 # Environment variables for database
-ENV MYSQL_ROOT_PASSWORD=rootpassword
+ENV MYSQL_ROOT_PASSWORD=helloworld
 ENV MYSQL_DATABASE=restaurant
 
 # Copy SQL initialization scripts
