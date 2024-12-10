@@ -1,13 +1,13 @@
 pipeline {
     agent any
     environment {
-        DOCKER_IMAGE = "your-dockerhub-username/restaurant-management-app"
+        DOCKER_IMAGE = "serialcomder/restaurant-management-spe:latest"
     }
     stages {
         stage('Clone Repository') {
             steps {
                 // Clone the GitHub repository
-                git branch: 'main', url: 'https://github.com/your-username/restaurant-management.git'
+                git branch: 'main', url: 'https://github.com/anantzz/restaurant-management-spe.git'
             }
         }
         stage('Build Application') {
@@ -25,7 +25,7 @@ pipeline {
         stage('Push Docker Image') {
             steps {
                 // Push Docker image to Docker Hub
-                withCredentials([usernamePassword(credentialsId: 'dockerhub', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
+                withCredentials([usernamePassword(credentialsId: 'DockerHubCred', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
                     sh 'echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin'
                     sh 'docker push $DOCKER_IMAGE'
                 }
