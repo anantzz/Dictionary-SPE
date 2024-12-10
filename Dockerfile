@@ -8,7 +8,7 @@ WORKDIR /app
 COPY target/restaurant-management.jar /app/
 
 # Copy MySQL connector (optional if needed)
-COPY lib/mysql-connector-java.jar /app/lib/
+COPY lib/mysql-connector.jar /app/lib/
 
 # Set environment variables for database connectivity
 ENV DB_HOST=mysql
